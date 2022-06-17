@@ -1,15 +1,4 @@
-# S3 remote state 
-terraform {
-
-  backend "s3" {
-    bucket         = "tf-remote-bkt3"
-    key            = "project/uat/redis"
-    region         = "us-east-1"
-    dynamodb_table = "cw_locking_dynamodb"
-
-  }
-}
-
+# Redis Elasticache distributed in-memory key-value database , caching and  message broker 
 resource "aws_elasticache_replication_group"  "uat_redis_cluster" {
 
   description                  = "uat redis group"
