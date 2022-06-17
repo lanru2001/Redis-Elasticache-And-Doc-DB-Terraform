@@ -135,3 +135,12 @@ variable "The preferred cache cluster availability zones" {
   default     = ["us-east-1a", "us-east-1b" ] 
 
 }
+
+variable "elasticache_subnet_group_name" {
+   
+  description = "The elasticache subnet group name"
+  type        = string
+  default     = ""
+
+}
+
