@@ -164,7 +164,7 @@ variable "family" {
    
   description = "The family of the Elasticache engine"
   type        = string
-  default     = ""
+  default     = "redis3.2"
 
 }
 
