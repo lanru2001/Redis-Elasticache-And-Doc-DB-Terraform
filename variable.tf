@@ -155,10 +155,17 @@ variable "elasticache_parameter_group_name" {
 variable "subnet_ids" {
    
   description = "The elasticache subnet group name"
-  type        = string
+  type        = list(string)
   default     = ""
 
 }
 
+variable "family" {
+   
+  description = "The family of the Elasticache engine"
+  type        = string
+  default     = ""
+
+}
 
 
