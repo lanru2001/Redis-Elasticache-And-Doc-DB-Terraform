@@ -144,3 +144,13 @@ variable "elasticache_subnet_group_name" {
 
 }
 
+variable "subnet_ids" {
+   
+  description = "The elasticache subnet group name"
+  type        = string
+  default     = ""
+
+}
+
+
+
