@@ -156,7 +156,7 @@ variable "subnet_ids" {
    
   description = "The elasticache subnet group name"
   type        = list(string)
-  default     = ""
+  default     = [ "subnet-03dc15dc94e5967aa", "subnet-0288aaf61f04bddac", "subnet-0e07ca691f789db64", "subnet-072e54b62a6d1944d" ]
 
 }
 
